@@ -44,12 +44,14 @@ app.run()
 //    var mainWindow: NSWindow?
 //
 //    func applicationDidFinishLaunching(_ notification: Notification) {
-//        let window = NSWindow.init(contentRect: NSMakeRect(0, 0, 320, 200), styleMask: [.titled, .closable], backing: .buffered, defer: true)
-//        window.orderFrontRegardless()
+//        let frame = NSMakeRect(0, 0, 320, 200)
+//        let window = NSWindow.init(contentRect: frame, styleMask: [.titled, .closable], backing: .buffered, defer: true)
 //
-//        let viewController = ViewController()
-//        window.contentViewController = viewController
+//        let textView = NSTextView(frame: frame)
+//        window.contentView = textView
+//        window.makeFirstResponder(textView)
 //
+//        window.makeKeyAndOrderFront(nil)
 //        mainWindow = window
 //
 //        let app = NSApplication.shared
@@ -58,21 +60,6 @@ app.run()
 //
 //    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
 //        return true
-//    }
-//}
-//
-//class ViewController: NSViewController, NSTextViewDelegate {
-//    override func loadView() {
-//        self.view = NSView(frame: NSMakeRect(0, 0, 320, 200))
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        let textView = NSTextView(frame: NSMakeRect(0, 0, 320, 200))
-//        textView.delegate = self
-//
-//        view.addSubview(textView)
 //    }
 //}
 //
