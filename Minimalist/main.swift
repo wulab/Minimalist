@@ -54,8 +54,7 @@ app.run()
 //        window.makeKeyAndOrderFront(nil)
 //        mainWindow = window
 //
-//        let app = NSApplication.shared
-//        app.activate(ignoringOtherApps: true)
+//        NSApp.activate(ignoringOtherApps: true)
 //    }
 //
 //    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
