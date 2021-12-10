@@ -8,7 +8,7 @@
 import Cocoa
 
 
-/// Case 1. Status item-based application
+/// Case 1: Status item-based application
 let app = NSApplication.shared
 
 let statusBar = NSStatusBar.system
@@ -19,7 +19,7 @@ statusItem.button?.action = #selector(NSApplication.terminate)
 app.run()
 
 
-///// Case 2. Minimal windowed application
+///// Case 2: Minimal windowed application
 //let app = NSApplication.shared
 //
 //let window = NSWindow.init(contentRect: NSMakeRect(0, 0, 320, 200), styleMask: .titled, backing: .buffered, defer: false)
@@ -28,7 +28,7 @@ app.run()
 //app.run()
 
 
-///// Case 3: Fully activated Cocoa windowed app
+///// Case 3: Fully-activated, windowed application
 //let app = NSApplication.shared
 //app.setActivationPolicy(.regular)
 //
@@ -39,7 +39,7 @@ app.run()
 //app.run()
 
 
-///// Case 4. Closing the app and cleanup
+///// Case 4: Closable windowed application with text view
 //class AppDelegate: NSObject, NSApplicationDelegate {
 //    var mainWindow: NSWindow?
 //
@@ -70,7 +70,7 @@ app.run()
 //app.run()
 
 
-///// Case 5. Menu item-based application
+///// Case 5: Menu item-based application
 //let app = NSApplication.shared
 //app.setActivationPolicy(.regular)
 //
